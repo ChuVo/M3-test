@@ -1,0 +1,41 @@
+@font-face {
+	font-family: 'CeraRoundPro';
+	src: url(fonts/CeraRoundPro-Black.otf);
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'CeraRoundPro-bold';
+	src: url(fonts/CeraRoundPro-bold.otf);
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'CeraRoundPro-light';
+	src: url(fonts/CeraRoundPro-light.otf);
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'CeraRoundPro-Medium';
+	src: url(fonts/CeraRoundPro-Medium.otf);
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'CeraRoundPro-Regular';
+	src: url(fonts/CeraRoundPro-Regular.otf);
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'CeraRoundPro-Thin';
+	src: url(fonts/CeraRoundPro-Thin.otf);
+	font-style: normal;
+	font-display: swap;
+}
