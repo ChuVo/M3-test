@@ -1,41 +1,72 @@
 @font-face {
+	font-family: 'Geometria-light';
+	src: url('../fonts/Geometria/Geometria-Thin.eot');
+	src: local('../fonts/Geometria/Geometria Thin'), local('Geometria-Thin'),
+		url('../fonts/Geometria/Geometria-Thin.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Geometria/Geometria-Thin.woff') format('woff'),
+		url('../fonts/Geometria/Geometria-Thin.ttf') format('truetype');
+	font-weight: 100;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Geometria-Medium';
+	src: url('Geometria-Medium.eot');
+	src: local('../fonts/Geometria/Geometria Medium'), local('Geometria-Medium'),
+		url('../fonts/Geometria/Geometria-Medium.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Geometria/Geometria-Medium.woff') format('woff'),
+		url('../fonts/Geometria/Geometria-Medium.ttf') format('truetype');
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Geometria';
+	src: url('../fonts/Geometria/Geometria.eot');
+	src: local('../fonts/Geometria/Geometria'),
+		url('../fonts/Geometria/Geometria.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Geometria/Geometria.woff') format('woff'),
+		url('../fonts/Geometria/Geometria.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Geometria-Bold';
+	src: url('../fonts/Geometria/Geometria-Bold.eot');
+	src: local('../fonts/Geometria/Geometria Bold'), local('Geometria-Bold'),
+		url('../fonts/Geometria/Geometria-Bold.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Geometria/Geometria-Bold.woff') format('woff'),
+		url('../fonts/Geometria/Geometria-Bold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Geometria-ExtraBold';
+	src: url('../fonts/Geometria/Geometria-ExtraBold.eot');
+	src: local('../fonts/Geometria/Geometria ExtraBold'), local('Geometria-ExtraBold'),
+		url('../fonts/Geometria/Geometria-ExtraBold.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Geometria/Geometria-ExtraBold.woff') format('woff'),
+		url('../fonts/Geometria/Geometria-ExtraBold.ttf') format('truetype');
+	font-weight: 800;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Geometria-Light';
+	src: url('../fonts/Geometria/Geometria-Light.eot');
+	src: local('../fonts/Geometria/Geometria Light'), local('Geometria-Light'),
+		url('../fonts/Geometria/Geometria-Light.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Geometria/Geometria-Light.woff') format('woff'),
+		url('../fonts/Geometria/Geometria-Light.ttf') format('truetype');
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
 	font-family: 'CeraRoundPro';
-	src: url(fonts/CeraRoundPro-Black.otf);
+	src: url('../fonts/CeraRoundPro/CeraRoundPro.otf');
+	font-weight: normal;
 	font-style: normal;
-	font-display: swap;
-}
-
-@font-face {
-	font-family: 'CeraRoundPro-bold';
-	src: url(fonts/CeraRoundPro-bold.otf);
-	font-style: normal;
-	font-display: swap;
-}
-
-@font-face {
-	font-family: 'CeraRoundPro-light';
-	src: url(fonts/CeraRoundPro-light.otf);
-	font-style: normal;
-	font-display: swap;
-}
-
-@font-face {
-	font-family: 'CeraRoundPro-Medium';
-	src: url(fonts/CeraRoundPro-Medium.otf);
-	font-style: normal;
-	font-display: swap;
-}
-
-@font-face {
-	font-family: 'CeraRoundPro-Regular';
-	src: url(fonts/CeraRoundPro-Regular.otf);
-	font-style: normal;
-	font-display: swap;
-}
-
-@font-face {
-	font-family: 'CeraRoundPro-Thin';
-	src: url(fonts/CeraRoundPro-Thin.otf);
-	font-style: normal;
-	font-display: swap;
 }
