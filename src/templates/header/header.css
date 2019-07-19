@@ -3,9 +3,14 @@
   padding-top: 35px;
   justify-content: space-between;
 
+  @media (max-width: 972px) {
+    padding-top: 20px;
+  }
+
   .logo {
     font-size: 12.5px;
     width: 200px;
+    z-index: 9;
 
     @media (max-width: 972px) {
       font-size: 9.5px;
