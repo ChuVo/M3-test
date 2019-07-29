@@ -1,6 +1,5 @@
 .slider {
-  position: absolute;
-  top: 0;
+  position: relative;
   overflow-x: hidden;
   text-align: center;
   width: 100%;  
@@ -147,6 +146,21 @@
     margin: 0 auto;
     width: 80%;
 
+    @media (max-width: 1200px) {
+      transform: translateY(-190%);
+    }
+
+    @media (max-width: 972px) {
+      justify-content: space-between;
+      transform: translateY(-300%);
+      width: 95%;
+    }
+
+    @media (max-width: 720px) {
+      justify-content: space-between;
+      transform: translateY(-600%);
+    }
+
     .marker__item {
       display: flex;
       align-items: center;
@@ -155,6 +169,10 @@
       transition: .1s;
       height: 15px;
       width: 50px;
+
+      @media (max-width: 972px) {
+        width: 30px;
+      }
       
       &_left {
         border-right-radius: 0;
@@ -181,6 +199,10 @@
         width: 20px;
         border: 1px solid #5489c3;
         margin: 0 auto;
+
+        @media (max-width: 972px) {
+          width: 7px;
+        }
 
         &_active {
           border: 1px solid white;

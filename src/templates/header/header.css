@@ -1,10 +1,26 @@
 .header {
+  box-sizing: border-box;
   display: flex;
-  padding-top: 35px;
+  padding: 0 10%;
+  position: absolute;
+  top: 35px;
+  left: 50%;
+  transform: translateX(-50%);
   justify-content: space-between;
+  max-width: 1440px;
+  width: 100%;
+  z-index: 9;
+
+  @media (max-width: 1280px) {
+    padding: 0 5%;
+  }
+
+  @media (max-width: 720px) {
+    padding: 0 15px;
+  }
 
   @media (max-width: 972px) {
-    padding-top: 20px;
+    top: 20px;
   }
 
   .logo {
@@ -49,6 +65,10 @@
     border-radius: 20px;
     transition: .2s;
 
+    &_check {
+      border: 1px solid #5489c3;
+    }
+
     @media (max-width: 1440px) {
       padding: 10px 20px;
     }
@@ -58,7 +78,8 @@
     }
 
     &:hover {
-      border: 1px solid white;
+      /* border: 1px solid white; */
+      background: #5489c3;
     }
 
     &:active {

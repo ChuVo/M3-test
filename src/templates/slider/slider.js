@@ -4,9 +4,9 @@
         marker2 = document.getElementById('marker2');
 
   let chusPoint = () => {
-      marker1.classList.toggle('marker__point_active');
-      marker2.classList.toggle('marker__point_active');
-    };
+    marker1.classList.toggle('marker__point_active');
+    marker2.classList.toggle('marker__point_active');
+  };
 
   setInterval( () => {
     staping1();

@@ -6,7 +6,8 @@
 }
 
 .main {
-  margin: 0 auto;
+  overflow: hidden;
+  /* margin: 0 auto;
   max-width: 1440px;
   padding: 0 10%;
 
@@ -16,7 +17,7 @@
 
   @media (max-width: 720px) {
     padding: 0 15px;
-  }
+  } */
 }
 
 .button {
@@ -38,9 +39,15 @@
 
   &:hover {
     width: 220px;
+    font-weight: bold;
+    transform: translateY(-5px);
 
     @media (max-width: 972px) {
       width: 170px;
     }
+  }
+
+  &:active {
+    transform: translateY(-4px);
   }
 }
