@@ -12,15 +12,6 @@
   position: relative;
   transform: translateX(-50%);
   width: 150%;
-  
-
-  /* @media (max-width: 1280px) {
-    padding: 3% 0 5%;
-  }
-
-  @media (max-width: 720px) {
-    padding: 0 15px;
-  } */
 
   &__title {
     margin-bottom: 57px;
@@ -60,15 +51,29 @@
       align-items: center;
       border: 2px solid #c3e5f5;
       border-radius: 50%;
+      cursor: pointer;
       display: flex;
       justify-content: center;
+      transition: .3s;
       size: 80px;
 
       @media (max-width: 972px) {
         size: 60px;
       }
-    }
 
+      &:hover {
+        transform: scale(0.9);
+      }
+
+      .grid__pic {
+         transition: 1s;
+
+         &_scale{
+           transform: scale(1.2);
+         }
+      }
+    }
+    
     &__subtitle {
       line-height: 1.5;
       text-align: center;
