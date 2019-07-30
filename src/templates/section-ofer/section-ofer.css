@@ -7,7 +7,7 @@
   flex-direction: column;
   margin: 0 auto;
   max-width: 1440px;
-  padding: 0 10%;
+  padding: 0 5%;
   width: 100%;
 
   @media (max-width: 1280px) {
@@ -19,28 +19,7 @@
   }
 
   &__title {
-    font-size: 36px;
-
-    @media (max-width: 1440px) {
-      font-size: 30px;
-    }
-
-    @media (max-width: 1280px) {
-      font-size: 28px;
-    }
-
-    
-    @media (max-width: 972px) {
-      font-size: 24px;
-    }
-
-    @media (max-width: 720px) {
-      font-size: 20px;
-    }
-
-    @media (max-width: 580px) {
-      font-size: 18px;
-    }
+    margin-bottom: 5%;
   }
 
   &__wrapper {
@@ -48,7 +27,7 @@
   }
 
   &__wrap {
-    width: 60%;
+    max-width: 900px;
   }
 
   &__item {
@@ -67,10 +46,9 @@
     justify-content: center;
     color: #a4def3;
     font-size: 60px;
-    size: 100px;
+    size: 125px;
     text-align: center;
     transform: rotate(45deg);
-    width: 100px;
 
     &-text {
       transform: rotate(-45deg);

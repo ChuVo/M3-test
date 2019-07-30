@@ -1,9 +1,9 @@
 .header {
   box-sizing: border-box;
   display: flex;
-  padding: 0 10%;
+  padding: 0 7.4%;
   position: absolute;
-  top: 35px;
+  top: 31px;
   left: 50%;
   transform: translateX(-50%);
   justify-content: space-between;
@@ -49,7 +49,7 @@
   }
 
   &__menu {
-    transform: translateY(10%);
+    transform: translateY(15%);
 
     @media (max-width: 972px) {
       display: none;
@@ -59,10 +59,9 @@
   &__menu-item {
     border: 1px solid transparent;
     color: white;
-    margin-right: 30px;
     text-decoration: none;
-    padding: 10px 30px;
-    border-radius: 20px;
+    padding: 18px 33px;
+    border-radius: 30px;
     transition: .2s;
 
     &_check {

@@ -20,7 +20,8 @@
   }
 
   &__wrapp {
-    width: 30%;
+    padding: 125px 0 75px 22px;
+
 
     @media (max-width: 1280px) {
       margin-bottom: 20px;
@@ -32,6 +33,8 @@
 
     @media (max-width: 720px) {
       font-size: 16px;
+      order: 3;
+      padding: 0;
     }
 
     @media (max-width: 540px) {    
@@ -45,11 +48,16 @@
   }
 
   &__about {
-    /* width:50%; */
+    padding-left: 41px;
+
     @media (max-width: 972px){
       text-align: center;
-      margin-bottom: 30px;
+      margin-bottom: 30px;      
       width: 60%;      
+    }
+
+    @media (max-width: 720px) {
+      padding: 0;
     }
 
     @media (max-width: 540px) {    
@@ -58,33 +66,13 @@
   }
 
   &__title {
-    font-size: 36px;
-    max-width: 560px;
-
-    @media (max-width: 1440px) {
-      font-size: 30px;
-    }
-
-    @media (max-width: 1280px) {
-      font-size: 28px;
-    }
-
-    
-    @media (max-width: 972px) {
-      font-size: 24px;
-    }
-
-    @media (max-width: 720px) {
-      font-size: 20px;
-    }
-
-    @media (max-width: 580px) {
-      font-size: 18px;
-    }
+    max-width: 563px;
+    margin: 0 0 30px 0;
   }
 
   &__text {
     font-size: 16px;
+    margin: 20px 0;
     
     @media (max-width: 972px) {
       font-size: 14px;
@@ -95,6 +83,7 @@
     font-size: 16px;
     line-height: 1.5;
     padding-left: 16px;
+    max-width: 474px;
 
     @media (max-width: 972px) {
       font-size: 14px;
@@ -103,18 +92,18 @@
 
   &__list-item {
     margin-bottom: 20px;
-    text-align: justify;
+    text-align: justify;    
   }
 
   &__pulse {
     position: absolute;
     bottom: -15%;
-    right: 10%;
+    right: 8%;
     z-index: -1;
 
-    @media (max-width: 540px) {
+    @media (max-width: 720px) {
       right: -20%;
-      top: 10%;
+      top: 60%;
     }
   }
 
@@ -134,8 +123,8 @@
       border: 1px solid #deecfd;
       border-radius: 50%;
       position: absolute;
-      size: 100%;
       transition: .5s;
+      size: 100%;
     }
 
     &__point {
@@ -169,7 +158,7 @@
     &__text {
       position: relative;
       display: block;
-      animation: circle-spin 50s linear reverse infinite ;
+      animation: circle-spin 50s linear reverse infinite;
        top: 100%;
        left: 150%;
 
@@ -184,7 +173,9 @@
     }
 
     &__circle {
-      border: 1px solid #60759d;;
+      animation: circle-pulse-spin 20s linear alternate-reverse infinite;
+      border: 2px solid #60759d;
+      border-bottom: none;
       border-radius: 50%;
       size: 60%;
       display: flex;
@@ -193,6 +184,7 @@
     }
 
     &__img-wrap {
+      animation: circle-spin 20s linear alternate-reverse infinite;
       size: 60%;
       position: relative;
 
@@ -238,5 +230,11 @@
   }
   to {
     transform: scale(1);
+  }
+}
+
+@keyframes circle-pulse-spin {
+  100% {
+    transform: rotate(-360deg) scale(1.2);
   }
 }
