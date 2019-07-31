@@ -22,14 +22,14 @@
         result.innerHTML = 'Упс! Кажется Вы ошиблись при вводе...';
       } else {
         result.innerHTML = 'Прекрасно!';
+      }
     }
-  }
   
     setTimeout( () => {
         result.classList.remove('send-result_visible');
       },2000);
 
-    return re.test(i);
+    return re.test(i);//вывает адрес для дальнейшей обработки
   }
 
 
@@ -45,5 +45,5 @@
   function scaleRemove(e) {
     e.target.firstElementChild.classList.remove('grid__pic_scale');
   }
-  
+
 }());
