@@ -2,7 +2,8 @@
 
   const button = document.getElementById('send-button'),
         result = document.querySelector('.send-result'),
-        imagesOfFunction = document.querySelectorAll('.grid__img-wrap');
+        imagesOfFunction = document.querySelectorAll('.grid__img-wrap'),
+        send = document.querySelector('.send');
   let myEmail = document.getElementById('email');
   
   
@@ -22,14 +23,19 @@
         result.innerHTML = 'Упс! Кажется Вы ошиблись при вводе...';
       } else {
         result.innerHTML = 'Прекрасно!';
+        send.classList.add('send__visible');
+      }
     }
-  }
   
     setTimeout( () => {
         result.classList.remove('send-result_visible');
+
+        if (send.classList.contains('send__visible')) {
+          send.classList.remove('send__visible');
+        }
       },2000);
 
-    return re.test(i);
+    return re.test(i);//вывает адрес для дальнейшей обработки
   }
 
 
@@ -45,5 +51,5 @@
   function scaleRemove(e) {
     e.target.firstElementChild.classList.remove('grid__pic_scale');
   }
-  
+
 }());

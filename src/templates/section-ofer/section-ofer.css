@@ -44,6 +44,7 @@
     line-height: 1.5;
     margin-bottom: 6%;
     max-width: 700px;
+    transform: translate(-150%);
     width: 100%;      
 
     &-title {
@@ -110,3 +111,17 @@
     width: 100%;
   }
 }
+
+.slideLeft {
+  animation: slideLeft .6s linear forwards;
+}
+
+@keyframes slideLeft {
+  from {
+    transform: translate(-150%);
+  }
+  to {
+    transform: translate(0%);
+  }
+}
+
